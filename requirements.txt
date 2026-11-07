@@ -1,0 +1,1 @@
+pytest>=8  # tests only; SecureDB uses only the standard library (sqlite3)
