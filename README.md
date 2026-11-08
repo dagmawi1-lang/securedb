@@ -2,6 +2,16 @@
 
 SecureDB is a small school-records database (students, classes, grades) with security built into the database: role-based permissions, row-level security, a **tamper-evident audit log**, SQL-injection-safe access, and rules that detect suspicious activity.
 
+![Demo run: every misuse scenario triggers an alert and the broken audit chain is caught](docs/screenshot.jpg)
+
+## My role & contributions
+
+**Solo developer · AI-assisted**
+
+- Designed the school-records schema, roles, and row-level access rules
+- Planned the misuse scenarios (privilege probing, SQL injection, mass reads, tampering) and checked each is detected
+- Used database triggers plus a hash chain so even direct-SQL edits are recorded and tampering is provable
+
 **Languages:** SQL (SQLite schema, constraints, triggers) · Python (access layer, detection)
 **Shows:** database design, secure software development, least privilege, auditing, and detection engineering.
 
